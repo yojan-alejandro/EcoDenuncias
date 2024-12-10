@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppinis", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url(../assets/images/UNEDMMA.jpg) no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+}
+
+header .ley a{
+    display: flex;
+    justify-content: space-between;
+    text-align: center ;
+    width: 1700px;
+    border: transparent;
+    text-decoration: none;
+}
+
+.Idioma select{
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    border:2px solid rgba(255, 255, 255, 0.799);
+    background-color: rgba(255, 255, 255, 0.397);
+    padding: 10px 5px;
+    color: rgb(255, 255, 255);
+}
+
+header{
+    display: flex;
+    justify-items: center;
+    justify-content: end;
+    gap: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px 20px;
+}
+
+.Texto span{
+    color: white;
+}
+
+.Texto button{
+    font-weight: bold;
+    width: 30px;
+    border:2px solid rgba(255, 255, 255, 0.799);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.397);
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease;
+}
+
+.Menu{ 
+    left: 15px;   
+    width: 70px;
+    background-color: rgba(255, 255, 255, 0.523);
+    border:2px solid rgba(194, 162, 162, 0.319);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: rgba(225, 205, 205, 0.879);
+    border-radius: 10px;
+    padding: 40px 40px 20px;
+    position: absolute;
+    top: 15%;
+}
+
+.Menu ul a img{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding:5px 5px;
+}
+.Menu a{
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    color: rgba(0, 0, 0, 0.599);
+}
+.Menu ul a{
+    color: #000;
+    text-decoration: none;
+}
+
+.sesion a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(13, 13, 13);
+}
+
+.Logo{
+    display: flex;    
+    justify-content: center;
+    justify-items: center;
+    height: 600px;
+    margin-top: 80px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: rgb(255, 255, 255);
+}

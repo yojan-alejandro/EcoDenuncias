@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("../assets/images/fondo.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="text"],input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #cccccc00;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 600%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 1%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    justify-content: space-between;
+}
+
+.checkbox label {
+    font-size: 12px;
+    margin: 1%;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.links {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 10%;
+    padding: 10%;
+    }
+    
+.links a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+p {
+    text-align: left;
+    font-size: 10px;
+    margin: 1%;
+}

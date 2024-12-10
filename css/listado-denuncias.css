@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppinis", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url(../assets/images/UNEDMMA.jpg) no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+}
+
+header .ley a{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 1700px;
+    border: transparent;
+    text-decoration: none;
+}
+
+.Idioma select{
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.799);
+    background-color: rgba(255, 255, 255, 0.397);
+    padding: 10px 5px;
+    color: rgb(255, 255, 255);
+}
+
+header{
+    display: flex;
+    justify-items: center;
+    justify-content: end;
+    gap: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px 20px;
+}
+
+.Texto span{
+    color: white;
+}
+
+.Texto button{
+    font-weight: bold;
+    width: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.799);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.397);
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease;
+}
+
+.denuncias-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem; 
+    position: absolute;
+    top: 70px;
+    left: 30px;
+}
+
+.denuncias-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.denuncias-content h1 {
+    font-size: 3rem; 
+    font-weight: bold;
+    color: #000; 
+}
+
+.denuncias-content p {
+    font-size: 1.2rem; 
+    color: gray;
+}  
+
+/* Contenedor de la sección de denuncias */
+.denuncias-section {
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    padding-top: 4rem;
+    margin: 50px auto 0 auto;
+    box-sizing: border-box;
+    margin: 120px auto 
+}
+
+.denuncias-section * {
+    padding: 0.5rem;
+}
+
+.denuncias-search-input {
+    width: 95%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: .1rem;
+}
+
+.denuncias-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(240, 248, 255, 0.95);
+    font-size: 0.9rem;
+}
+
+.denuncias-table th,
+.denuncias-table td {
+    padding: 20px; 
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #000;
+    font-size: 0.9rem;
+    vertical-align: middle; 
+}
+
+.denuncias-table th {
+    background-color: #00897b;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.denuncias-table tbody tr:nth-child(even) {
+    background-color: #e0f2f1; 
+}
+
+.denuncias-table tbody td:last-child {
+    color: #1e88e5; 
+}
+
+.denuncias-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.pagination-btn {
+    background-color: #00897b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.status-tramite {
+    background-color: #FFF3CD; 
+    color: #856404; 
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.status-resuelta {
+    background-color: #D4EDDA; 
+    color: #155724; 
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.status-vencida {
+    background-color: #F8D7DA;
+    color: #721C24; 
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}

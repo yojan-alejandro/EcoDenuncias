@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Contraseña</title>
+    <link rel="stylesheet" href="../../css/cambio-contraseña.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="logo-container">
+            <img src="../../assets/images/ecod 1.png" alt="Logo" class="logo">
+            <div class="frase">
+                <img src="../../assets/images/“Cuidar el medio ambiente es valorar la vida”.png" alt="Cuidar el medio ambiente es valorar la vida" class="frase">
+            </div>
+        </div>
+        <h1>Cambio de Contraseña</h1>
+        <p class="texto-instrucciones">Completá el formulario para realizar el cambio de la contraseña</p>
+        
+        <h2>Contraseña</h2>
+        <p class="descripcion">Ingresá una contraseña válida. <br> Mínimo de 8 caracteres, incluyendo mayúsculas y números.</p>
+        
+        <label for="nueva-contraseña">Ingrese su nueva contraseña:</label>
+        <input type="password" id="nueva-contraseña" name="nueva-contraseña" placeholder="Nueva Contraseña" required minlength="8">
+
+        <label for="confirmar-contraseña">Repita la contraseña:</label>
+        <input type="password" id="confirmar-contraseña" name="confirmar-contraseña" placeholder="Repita Contraseña" required minlength="8">
+        
+        <button type="button" onclick="window.location.href='../../libs/pages/contraseña-recuperada.html'">Guardar cambio</button>
+    </div>
+</body>
+</html>

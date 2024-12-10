@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Denuncias</title>
+    <link rel="stylesheet" href="../../css/listado-denuncias.css">
+</head>
+<body>
+    <header>
+        <div class="ley">
+            <a href=""> ley 2111 del 2021</a>
+        </div>
+
+        <div class="Texto">
+            <span>Texto</span>
+            <button> A </button>
+            <button> A+ </button>
+            <button> A++ </button>
+        </div>
+
+        <div class="Idioma">
+            <select>
+                <option>Español</option>
+                <option>Ingles</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="denuncias-header">
+        <img src="../../assets/images/Denuncias.png" alt="Icono de denuncias" class="denuncias-icon">
+        <div class="denuncias-content">
+            <h1 class="denuncias-title">Denuncias</h1>
+            <p class="denuncias-subtitle">Listado de Denuncias</p>
+        </div>
+    </div>
+
+    <section class="denuncias-section">
+        <div class="denuncias-search">
+            <input type="text" class="denuncias-search-input" placeholder="Buscar por Radicado, Fecha, Nombre, Cédula..." />
+        </div>
+
+        <table class="denuncias-table">
+            <thead>
+                <tr>
+                    <th>Radicado</th>
+                    <th>Fecha</th>
+                    <th>Denunciante</th>
+                    <th>Estado</th>
+                    <th>Días abierta</th>
+                    <th>Última Actualización</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A-00000001</td>
+                    <td>09/04/2023</td>
+                    <td>Pedro Antonio Ramirez</td>
+                    <td class="status-tramite">En Trámite</td>
+                    <td>2 días</td>
+                    <td>12/04/2023 10:45</td>
+                    <td>
+                        <button type="submit" onclick="window.location.href='../../libs/pages/detalle-denuncia.html'" class="btn">Detalle de Denuncia</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>A-00000002</td>
+                    <td>03/02/2023</td>
+                    <td>Rosaura Ordóñez</td>
+                    <td class="status-resuelta">Resuelta</td>
+                    <td>-</td>
+                    <td>05/02/2023 09:10</td>
+                    <td>
+                        <button type="submit" onclick="window.location.href='../../libs/pages/detalle-denuncia.html'" class="btn">Detalle de Denuncia</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>A-00000003</td>
+                    <td>09/01/2023</td>
+                    <td>José Fernando Arcos</td>
+                    <td class="status-vencida">Vencida</td>
+                    <td>15 días</td>
+                    <td>23/01/2023 15:00</td>
+                    <td>
+                        <button type="submit" onclick="window.location.href='../../libs/pages/detalle-denuncia.html'" class="btn">Detalle de Denuncia</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>A-00000004</td>
+                    <td>08/01/2023</td>
+                    <td>Carmen Muñoz Perez</td>
+                    <td class="status-resuelta">Resuelta</td>
+                    <td>-</td>
+                    <td>15/01/2023 13:30</td>
+                    <td>
+                        <button type="submit" onclick="window.location.href='../../libs/pages/detalle-denuncia.html'" class="btn">Detalle de Denuncia</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <div class="denuncias-pagination">
+            <button class="pagination-btn">Anterior</button>
+            <span class="pagination-info">Página 1 - 1</span>
+            <button class="pagination-btn">Siguiente</button>
+        </div>
+    </section>
+</body>
+</html>

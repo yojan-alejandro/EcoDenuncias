@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuario</title>
+    <title>Mostrar/Ocultar Contraseña</title>
+    <link rel="stylesheet" href="../../css/crear-user.css">
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="../../assets/images/ecod.png" height="100px" alt="Eco-Denuncias ">
+        <h1> Crear Usuario</h1>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="text" placeholder="Apellido"required>
+            <input type="text" placeholder="Email"required>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Contraseña">
+            <button class="toggle-password" onclick="togglePasswordVisibility()"></button>
+
+        </div>
+        <p>Mínimo 8 caracteres incluyendo Mayúsculas y números</p>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Repita su Contraseña">
+            <button class="toggle-password" onclick="togglePasswordVisibility()"></button>
+        </div>
+            <div class="checkbox">
+                <label><input type="checkbox">Acepto los terminos y condiciones</label>
+                </div>
+                <br>
+            <button type="submit" class="btn">Crear</button>
+            <br>
+            <br>
+            <a href="../../libs/pages/inicio-sesion.html">¿Ya tienes cuenta?</a>
+        </form>
+    </div>
+</body>
+</html>

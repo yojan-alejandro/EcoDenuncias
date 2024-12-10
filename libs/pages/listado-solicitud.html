@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de solicitud</title>
+    <link rel="stylesheet" href="../../css/listado-solicitud.css">
+</head>
+<body>
+    <header>
+        <div class="ley">
+            <a href=""> ley 2111 del 2021</a>
+        </div>
+
+        <div class="Texto">
+            <span>Texto</span>
+            <button> A </button>
+            <button> A+ </button>
+            <button> A++ </button>
+        </div>
+
+        <div class="Idioma">
+            <select>
+                <option>Español</option>
+                <option>Ingles</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="denuncias-header">
+        <img src="../../assets/images/Denuncias.png" alt="Icono de denuncias" class="denuncias-icon">
+        <div class="denuncias-content">
+            <h1 class="denuncias-title">Denuncias</h1>
+            <p class="denuncias-subtitle">Busqueda de Denuncias</p>
+        </div>
+    </div>
+
+    <aside class="barra-lateral">
+        <section class="estados">
+            <h2>Estados</h2>
+            <ul>
+                <li><span class="finalizado">■</span> N = Nuevo</li>
+                <li><span class="tramite">■</span> T = Tramite</li>
+                <li><span class="vencidas">●</span> V = Vencidas</li>
+                <li><span class="documentos">○</span> D = Documentos</li>
+                <li><span class="archivadas">▲</span> A = Archivadas</li>
+            </ul>
+        </section>
+    
+        <section class="Solicitud">
+            <h2>Solicitud</h2>
+            <ul>
+                <li><span class="Solicitud">CP= Capacitación</span></li>
+                <li><span class="Solicitud">ET= Evaluacion de Terreno</span></li>
+                <li><span class="Solicitud">LA= Licencia Ambiental</span></li>
+                <li><span class="Solicitud">PV= Permiso de Vertimientos</span></li>
+                <li><span class="Solicitud">CA= Concesión de Aguas supterraneas</span></li>
+                <li><span class="Solicitud">AF= Aprovechamiento Forestal</span></li>
+                <li><span class="Solicitud">CS= Concesión de Aguas Superficiales</span></li>
+                <li><span class="Solicitud">AA= Aprovechamiento de Arboles Aslado</span></li>
+                <li><span class="Solicitud">EA= Exploración de Aguas Subterraneas</span></li>
+            </ul>
+        </section>
+
+        <section class="codigos">
+            <h2>Codigos</h2>
+            <ul>
+                <li><samp class="codigos">00-1 = CP</samp></li>
+                <li><span class="codigos">00-2 = ET</span></li>
+                <li><span class="codigos">00-3 = LA</span></li>
+                <li><span class="codigos">00-4 = PV</span></li>
+                <li><span class="codigos">00-5 = CA</span></li>
+                <li><span class="codigos">00-6 = AF</span></li>
+                <li><span class="codigos">00-7 = CS</span></li>
+                <li><span class="codigos">00-8  = AA</span></li>
+                <li><span class="codigos">00-1 = AE</span></li>
+            </ul>
+        </section>
+    </aside>
+    
+    <section class="filtros-y-tabla">
+        <section class="filtros">
+            <div class="filtros-container">
+                <div class="fila-filtro">
+                    <label for="filtro-general">Filtro:</label>
+                    <input type="text" id="filtro-general" placeholder="Buscar...">
+                </div>
+
+                <div class="fila-fechas">
+                    <label for="fecha-inicio">Fecha de inicio:</label>
+                    <input type="date" id="fecha-inicio">
+                    <label for="fecha-fin">Fecha de fin:</label>
+                    <input type="date" id="fecha-fin">
+                </div>
+
+                <div class="fila-estado">
+                    <label for="estado">Estado:</label>
+                    <select id="estado">
+                        <option value="todos">Todos</option>
+                        <option value="finalizada">Finalizada</option>
+                        <option value="tramite">Trámite</option>
+                        <option value="vencida">Vencida</option>
+                        <option value="archivada">Archivada</option>
+                    </select>
+                </div>
+
+                <div class="fila-codigo-delito">
+                    <label for="codigo">Código:</label>
+                    <input type="text" id="codigo" placeholder="Código">
+        
+                    <label for="delito">Responsable:</label>
+                    <select id="delito">
+                        <option value="todos">Nombre</option>
+                        <option value="deforestacion">Deforestación</option>
+                        <option value="caza-ilegal">Caza Ilegal</option>
+                        <option value="pesca-ilegal">Pesca Ilegal</option>
+                    </select>
+
+                    <label for="dependencia">Dependencia:</label>
+                    <select id="dependencia">
+                        <option value="todos">Todos</option>
+                        <option value="gestion-ambiental">Gestión Ambiental</option>
+                        <option value="juridico">Jurídico</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Tabla de búsqueda -->
+        <table class="tabla-busqueda">
+            <thead>
+                <tr>
+                    <th>N</th>
+                    <th>T</th>
+                    <th>V</th>
+                    <th>A</th>
+                    <th>Solicitud</th>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Fecha de emisión</th>
+                    <th>Dependencia</th>
+                    <th>Responsable</th>
+                    <th>Fecha final</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>●</td>
+                    <td>●</td>
+                    <td>○</td>
+                    <td>○</td>
+                    <td>CP</td>
+                    <td>002</td>
+                    <td>Capacitación</td>
+                    <td>12/03/2023</td>
+                    <td>Gestión Ambiental</td>
+                    <td>Ing Carlos M. Rodríguez</td>
+                    <td>12/08/2023</td>
+                </tr>
+                <tr>
+                    <td>○</td>
+                    <td>●</td>
+                    <td>●</td>
+                    <td>○</td>
+                    <td>ET</td>
+                    <td>006</td>
+                    <td>Evaluación de Terreno</td>
+                    <td>16/07/2022</td>
+                    <td>-</td>
+                    <td>Ing María R. Chanchal</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>○</td>
+                    <td>○</td>
+                    <td>●</td>
+                    <td>○</td>
+                    <td>LA</td>
+                    <td>004</td>
+                    <td>Licencia Ambiental</td>
+                    <td>22/10/2022</td>
+                    <td>-</td>
+                    <td>Salma Gimenez B.</td>
+                    <td>24/02/2019</td>
+                </tr>
+                <tr>
+                    <td>○</td>
+                    <td>○</td>
+                    <td>●</td>
+                    <td>○</td>
+                    <td>LA</td>
+                    <td>009</td>
+                    <td>Licencia Ambiental</td>
+                    <td>24/12/2022</td>
+                    <td>-</td>
+                    <td>Ing Camilo Vargas Rivera</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>○</td>
+                    <td>●</td>
+                    <td>○</td>
+                    <td>○</td>
+                    <td>LA</td>
+                    <td>004</td>
+                    <td>Licencia Ambiental</td>
+                    <td>29/12/2021</td>
+                    <td>-</td>
+                    <td>Aurora Chavez Guevara</td>
+                    <td>05/10/2021</td>
+                </tr>
+                <tr>
+                    <td>○</td>
+                    <td>●</td>
+                    <td>○</td>
+                    <td>○</td>
+                    <td>LA</td>
+                    <td>005</td>
+                    <td>Licencia Ambiental</td>
+                    <td>29/12/2021</td>
+                    <td>-</td>
+                    <td>Aurora Chavez Guevara</td>
+                    <td>05/10/2021</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

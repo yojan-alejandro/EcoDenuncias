@@ -1,0 +1,81 @@
+body {
+    background-image: url('../assets/images/fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor del logo */
+.logo-container {
+    position: absolute;
+    left: 5px;  
+    top: 5px;   
+    text-align: center;  
+    display: flex;        
+    flex-direction: column;  
+    align-items: center;  
+}
+
+/* Estilo del logo */
+.logo {
+    width: 120px;  
+    height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.52));
+    margin-top: 5px;  
+    margin-left: 5px;
+}
+
+/* Estilo de la imagen de las letras debajo del logo */
+.frase {
+    width: 180px;  
+    height: auto;  
+    margin-top: 10px;  
+}
+
+/* Contenedor de la alerta */
+.contenedor-alerta {
+    background-color: rgba(169, 169, 169, 0.4); /* Fondo gris más transparente */
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen dentro del contenedor */
+.imagen-alerta {
+    width: 50%; /* Imagen más pequeña, ocupa solo el 50% del contenedor */
+    height: auto;
+    border-radius: 10px; /* Esquinas redondeadas */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Texto debajo de la imagen */
+.texto-alerta {
+    color: #fff; /* Blanco para el texto */
+    font-size: 18px; /* Tamaño de texto */
+    margin-top: 15px;
+    margin-bottom: 25px;
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+button {
+    background-color: #000;
+    color: white;
+    padding: 12px 0;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #444;
+}

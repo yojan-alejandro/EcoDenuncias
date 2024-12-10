@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppinis", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url(../assets/images/UNEDMMA.jpg) no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+}
+
+header .ley a{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 1700px;
+    border: transparent;
+    text-decoration: none;
+}
+
+.Idioma select{
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.799);
+    background-color: rgba(255, 255, 255, 0.397);
+    padding: 10px 5px;
+    color: rgb(255, 255, 255);
+}
+
+header{
+    display: flex;
+    justify-items: center;
+    justify-content: end;
+    gap: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px 20px;
+}
+
+.Texto span{
+    color: white;
+}
+
+.Texto button{
+    font-weight: bold;
+    width: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.799);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.397);
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease;
+}
+
+.denuncias-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem; 
+    position: absolute;
+    top: 70px;
+    left: 30px;
+}
+
+.denuncias-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.denuncias-content h1 {
+    font-size: 3rem; 
+    font-weight: bold;
+    color: #000; 
+}
+
+.denuncias-content p {
+    font-size: 1.2rem; 
+    color: gray;
+}  
+
+.filtros-y-tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px; 
+    max-width: 1400px;
+    margin-left: 540px; 
+    margin-top: 123px;
+    background-color: rgba(240, 248, 255, 0.95); 
+    padding: 40px; 
+    border-radius: 12px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid #80cbc4; 
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+}
+
+.filtros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+}
+
+.fila-filtro,
+.fila-fechas,
+.fila-estado,
+.fila-codigo-delito {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.fila-fechas input,
+.fila-estado select,
+.fila-codigo-delito input,
+.fila-codigo-delito select {
+    padding: 12px; 
+    border: 1px solid #90caf9; 
+    border-radius: 6px; 
+    font-size: 1.2rem; 
+}
+
+.tabla-busqueda {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; 
+    background-color: rgba(240, 248, 255, 0.95); 
+}
+
+.tabla-busqueda th,
+.tabla-busqueda td {
+    padding: 15px; 
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #000; 
+}
+
+.tabla-busqueda th {
+    background-color: #00897b; 
+    color: #fff; 
+    font-weight: bold;
+}
+
+.barra-lateral {
+    position: absolute;
+    top: 190px;
+    left: 50px;
+    width: 380px; 
+    background-color: rgba(240, 248, 255, 0.95); 
+    padding: 25px;
+    margin-right: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid #80cbc4; 
+}
+
+.barra-lateral h2 {
+    color: #00897b; 
+    border-bottom: 2px solid #00897b;
+}
+
+.barra-lateral li {
+    color: #444; 
+    padding: 4px;
+}
+
+.finalizado { color: #43a047; }      /* Verde */
+.tramite { color: #fb8c00; }         /* Naranja */
+.vencidas { color: #e53935; }        /* Rojo */
+.documentos { color: #1e88e5; }      /* Azul */
+.archivadas { color: #8e24aa; }      /* Morado */
+
+.codigo {
+    color: #00897b; 
+}
+
+.descripcion {
+    color: #666; 
+}
+
+.filtros input:focus,
+.filtros select:focus {
+    border-color: #00897b; 
+}
+
+.tabla-busqueda tbody tr:nth-child(even) {
+    background-color: #e0f2f1; 
+}
+
+.tabla-busqueda tbody td:last-child {
+    color: #1e88e5; 
+}
